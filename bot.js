@@ -50,11 +50,11 @@ __~~The King Bot~~__ By: 🅞𝙏🅞Ｚℵ🌕💎#1287
              Admin Commands
 ╚[❖════════════❖]╝
 
- ❖ .bc1 ➾ send brodcast to all with embed
+ ❖ !bc1 ➾ send brodcast to all with embed
 
- ❖ .bc2 ➾ send brodcast to online members
+ ❖ !bc2 ➾ send brodcast to online members
 
- ❖ .bc3 ➾ send brodcast react embed or no
+ ❖ !bc3 ➾ send brodcast react embed or no
 
 
 ╔[❖════════════❖]╗
@@ -94,7 +94,7 @@ client.on('message', message => {
     if (message.guild) {
    let embed = new Discord.RichEmbed()
     let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.split(' ')[0] == prefix + 'bc1') {
+if(message.content.split(' ')[0] == prefix + "bc1") {
     if (!args[1]) {
 return;
 }
@@ -147,7 +147,7 @@ client.on("message", message => {
 
 client.on('message', message => {
               if(!message.channel.guild) return;
-    var prefix = ".";
+    var prefix = "!";
     if(message.content.startsWith(prefix + 'bc3')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
