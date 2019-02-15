@@ -21,7 +21,7 @@ client.login("NTQ0OTUzMTk5MjU4NTAxMTIw.D0SmvQ.BKPb6XGqFzh4619UifrFUVlGvew");
 
 
 
-var prefix = ('.')
+var prefix = ('!')
 client.on('message', message => {
     if (message.author.bot) return;
      if (message.content === prefix + "help") {
@@ -71,7 +71,7 @@ __~~The King Bot~~__ By: 🅞𝙏🅞Ｚℵ🌕💎#1287
 
 ==================================================================
 
-bot invite link: https://bit.ly/2LGyOUu
+bot invite link: https://discordapp.com/api/oauth2/authorize?client_id=544953199258501120&permissions=8&scope=bot
 
 ==================================================================
 
@@ -88,7 +88,7 @@ bot invite link: https://bit.ly/2LGyOUu
 
 
 
-var prefix = ('.')
+var prefix = ('!')
 client.on('message', message => {
     if (message.author.id === client.user.id) return;
     if (message.guild) {
@@ -120,7 +120,7 @@ return;
 
 
 
-var prefix = ('.')
+var prefix = ('!')
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "bc2")) {
